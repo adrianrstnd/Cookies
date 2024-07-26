@@ -1,0 +1,425 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
+
+:root {
+  --main-color: #d3ad7f;
+  --black: #0a0a0a;
+  --bg: #010103;
+  --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+  --white: #fff;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 5rem;
+}
+
+body {
+  background: var(--bg);
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.9rem 3rem;
+  font-size: 1.7rem;
+  color: #fff;
+  background: var(--main-color);
+  cursor: pointer;
+}
+
+.btn:hover {
+  letter-spacing: 0.2rem;
+}
+
+.header {
+  background: rgb(90, 50, 50);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 7%;
+  border-bottom: var(--border);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.header p {
+  font-size: 20px;
+}
+
+.header .logo img {
+  height: 6rem;
+}
+
+.header .navbar a {
+  margin: 0 1rem;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.header .navbar a:hover {
+  color: var(--main-color);
+  border-bottom: 0.1rem solid var(--main-color);
+  padding-bottom: 0.5rem;
+}
+
+.header .icons div {
+  color: #fff;
+  cursor: pointer;
+  font-size: 2.5rem;
+  margin-left: 2rem;
+}
+
+.header .icons div:hover {
+  color: var(--main-color);
+}
+
+.body .home a {
+  color: #fff;
+}
+
+#menu-btn {
+  display: none;
+}
+
+/* Body Styles */
+.body {
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+}
+
+.body .home {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.body .home h2 {
+  font-size: 90px;
+  margin-left: 90px;
+  margin-right: 90px;
+  color: #333;
+}
+
+.body .home p {
+  font-size: 28px;
+  color: #010103;
+}
+
+.body .about {
+  text-align: center;
+  margin-top: 200px;
+}
+
+.about h2 {
+  font-size: 50px;
+  color: #333;
+}
+
+.about p {
+  font-size: 20px;
+  color: #010103;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 30px;
+}
+
+/* menu styles */
+.menu {
+  text-align: center;
+  margin-top: 200px;
+}
+
+.menu-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu-item figure {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.menu-item figure img {
+  height: auto;
+  max-width: 100%;
+}
+
+.menu-item figcaption {
+  color: #010103;
+  margin-top: 5px;
+  font-size: 20px;
+}
+.menu-item img {
+  margin-right: 10px;
+}
+
+.menu h2 {
+  font-size: 50px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.menu img {
+  margin: 10px;
+}
+
+.menu p {
+  font-size: 18px;
+  color: #666;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.contact {
+  margin-bottom: 30px;
+  margin-top: 100px;
+}
+
+.contact p {
+  font-size: 18px;
+}
+
+.footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+#review {
+  padding: 80px 0;
+}
+
+#review h2 {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #cccccc;
+  color: #010103;
+}
+
+input {
+  color: #010103;
+}
+
+button {
+  color: #010103;
+  padding: 8px;
+  cursor: pointer;
+}
+
+/* media queries */
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  .body .home h2 {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  .body .about p {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  .header {
+    padding: 1.5rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-btn {
+    display: inline-block;
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background: #fff;
+    width: 30rem;
+    height: calc(100vh - 9.5rem);
+  }
+
+  .header .navbar.active {
+    right: 0;
+  }
+
+  .header .navbar a {
+    color: var(--black);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .menu-item figure {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .menu-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  #menu-btn {
+    display: inline-block;
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background: #fff;
+    width: 30rem;
+    height: calc(100vh - 9.5rem);
+  }
+
+  .header .navbar.active {
+    right: 0;
+  }
+
+  .header .navbar a {
+    color: var(--black);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .menu-item figure {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .body .home h2 {
+    font-size: 50px;
+    margin-left: 60px;
+    margin-right: 60px;
+    color: #333;
+  }
+
+  .body .home p {
+    font-size: 18px;
+    color: #010103;
+  }
+
+  .about h2 {
+    font-size: 30px;
+    color: #333;
+  }
+
+  .about p {
+    font-size: 18px;
+    color: #010103;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 30px;
+  }
+
+  .menu h2 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 30px;
+  }
+
+  .menu-item img {
+    margin: auto;
+  }
+
+  .menu-item figcaption {
+    color: #010103;
+    margin-top: 5px;
+    font-size: 15px;
+  }
+
+  .footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .footer p {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .contact {
+    text-align: center;
+  }
+
+  .contact h2 {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+
+  .contact p {
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  #review h2 {
+    font-size: 30px;
+  }
+}
